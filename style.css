@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Bhaijaan 2';
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: #0e0e0e8f;
+}
+#video-1 video{
+    display: block;
+    z-index: -1;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+}
+video{
+    display: none;
+    /* z-index: -1;
+    width: 100%;
+    position: absolute; */
+}
+
+#pannel {
+    overflow: hidden;
+    width: 85%;
+    height: 85%;
+    background-color: #8cb67a;
+    border-radius: .5vw;
+}
+
+#ptop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffff;
+    width: 100%;
+    height: 60px;
+    background-color: #936363;
+}
+
+#ptop h1 {
+    font-size: 2vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#psection {
+    width: 100%;
+    height: calc(100% - 60px);
+    background-color: #d8d49bea;
+    display: flex;
+
+}
+
+#psection-cont {
+    margin-top: 2vw;
+    width: 50%;
+    height: 90%;
+    /* background-color: #7cb5d0; */
+}
+
+nav {
+    width: 100%;
+    height: 4vw;
+    /* background-color: #b72bdd; */
+    padding: 1vw 4vw;
+}
+
+#navSal ul {
+    display: flex;
+    align-items: center;
+    gap: 10vw;
+
+}
+
+li {
+    list-style: none;
+    font-size: 1.7vw;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#form {
+    /* background-color: rgb(240, 108, 108); */
+    width: 50%;
+    color: white;
+    /* margin-left: 10vw; */
+    margin-top: 1vw;
+}
+
+#form form {
+    display: flex;
+    flex-direction: column;
+   gap: 3vw;
+   /* padding-left: 20vw;
+   padding-top: 3vw; */
+}
+
+#form form select{
+    font-size: 1.2vw;
+    color: white;
+    font-weight: 570;
+    background-color: #12440df6;
+    padding: .2vw;
+    border-radius: .3vw;
+}
+#name{
+    /* background-color: red; */
+    width: 50%;
+    padding-left: 5vw;
+    color: white;
+    line-height: 2.7;
+  
+    
+}
+#salname{
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#psection-img {
+    position: relative;
+    margin-top: 2vw;
+    width: 50%;
+    height: 90%;
+    /* background-color: #726195; */
+}
+#psection-img img{
+    position: absolute;
+    bottom: .3vw;
+    right: 8vw;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    /* transition: all ease 2s; */
+}
+
+#psection-img h3{
+    margin-left: 2vw;
+    padding: 0 1vw;
+    line-height: 1.7;
+    color: white;
+    font-size: 1.5vw;
+    font-weight: 500;
+    font-family: 'Noto Nastaliq Urdu', serif;
+}
+#urdu {
+   margin-left: 17vw;
+   margin-top: 2vw;
+   line-height: 2;
+}
+#urdu h3{
+    font-size: 1.3vw;
+    font-weight: 200;
+}
+
+
+
+
+
+
+
+
+@media (max-width :650px ){
+    #main{
+        background-color: #0a0a0a7e;
+        
+    }
+    #psection {
+        
+        /* background-color: #bed27b; */
+        display: flex;
+        flex-direction: column;
+    
+
+    }
+    #psection-cont {
+       
+        width: 100%;
+        
+    }
+    #name{
+        font-size: 3.5vw;
+        line-height: 3.1;
+        
+        
+    }
+    #form form {
+        display: flex;
+        gap: 10vw;
+        margin-left: -2vw;
+    }
+    #form form select{
+        width: 40vw;
+        margin-top: 3vw;
+        font-size: 4vw;
+        color: white;
+        font-weight: 570;
+        background-color: #0e4f05;
+        padding: .8vw;
+        border-radius: 1.5vw;
+        
+    }
+    #ptop h1 {
+        font-size: 6vw;
+        font-weight: 600;
+       
+    }
+    nav {
+        
+        height: 10vw;
+        
+    }
+    nav li{
+        font-size: 5vw;
+        font-weight: 600;
+    }
+    #psection-img{
+        width: 100%;
+    }
+    
+    #psection-img img{
+        position: absolute;
+        bottom: 5vw;
+        right: 1vw;
+        width: 35vw;
+        height: 35vw;
+        border-radius: 50%;
+    }
+    #psection-img h3{
+        margin-right: 8vw;
+        margin-left: 1.5vw;
+        font-size: 3vw;
+        width: 50vw;
+        line-height: 1.4;
+    }
+    #urdu {
+       margin-left: 3vw;
+       margin-top: 9vw;
+       margin-bottom: 2vw;
+       line-height: 2;
+    }
+    #urdu h3{
+        font-size: 3vw;
+        font-weight: 200;
+    }
+    video{
+        display: block;
+        z-index: -1;
+        width: fit-content;
+        height: 250vw;
+        position: absolute;
+    }
+}
